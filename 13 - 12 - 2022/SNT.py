@@ -24,12 +24,3 @@ def hsqrt(a): # define the function
         x=(x+l)/2 # set x to itself plus l over 2
         e.append(x) # add x value to the e list and restart
     print(e[14]) # output the fifteenth value of the e list
-
-def hsqrt_v(a,b): # dev version of the function
-    e=[] # init a list to store the values
-    x = r.randrange(2, 25, 1) # use the random module to set the value of x, from 2 to 25 in 1 to 1
-    for i in range(b): # b iterations
-        l = a/x # set l to a per x (for simplicity)
-        x=(x+l)/2 # set x to itself plus l over 2
-        e.append(x) # add x value to the e list and restart
-    print(e[b-1]) # output the b minus 1 (last) value of the e list
