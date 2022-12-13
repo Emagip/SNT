@@ -13,12 +13,12 @@ def hsqrt(a): # define the function
     if a < 0 : # because negative value do not work, i block you and i quit the program
         print("Juste non. Essaye pas, ca marche pas. (Just don't. Do not try, i doesn't work.)") # """"Bad humor""""
         exit() # Evil action
-    if a == 0:
-        L=10
-        for i in range(100):
-            l=a/L
-            L=(l+L)/2
-        return L
+    if a == 0: # Because the function doesn't work with 0, i use the code of the professor which work with 0
+        L=10 # Same as the random x
+        for i in range(100): # a hundred iterations for more presicion.
+            l=a/L # set l to a per L
+            L=(l+L)/2 # set L to l plus L over two
+        return L # when the hundreds iterations are finished, return the value and terminate the function
     for i in range(15): # 15 iterations should be enough
         l = a/x # set l to a per x (for simplicity)
         x=(x+l)/2 # set x to itself plus l over 2
